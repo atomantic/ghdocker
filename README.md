@@ -21,4 +21,13 @@ ghcr.io/atomantic/ghdocker:latest
 
 ```bash
 docker run ghcr.io/atomantic/ghdocker:latest
+Unable to find image 'ghcr.io/atomantic/ghdocker:latest' locally
+latest: Pulling from atomantic/ghdocker
+4f4fb700ef54: Pull complete
+b6dc7043acb2: Pull complete
+Digest: sha256:b367a9b02c15f652a8145c416cb0c1de8238fc7d6c989858a3727cde3d5a8962
+Status: Downloaded newer image for ghcr.io/atomantic/ghdocker:latest
+hello hidden code
 ```
+
+Notice that the sha hash does not match the hash built in github actions and pushed as latest/main, but we have overwritten the main/latest tags manually with a modified code that has not been committed to the repo.
